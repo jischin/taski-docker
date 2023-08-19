@@ -28,15 +28,15 @@ long_line_behaviour=2
 long_line_column=79
 
 [files]
-current_page=1
+current_page=2
 FILE_NAME_0=78;None;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2F.env;0;4
 FILE_NAME_1=67;YAML;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2F.github%2Fworkflows%2Fmain.yml;0;4
-FILE_NAME_2=82;Python;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2Fbackend%2Fbackend%2Fsettings.py;0;4
+FILE_NAME_2=71;Python;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2Fbackend%2Fbackend%2Fsettings.py;0;4
 FILE_NAME_3=0;YAML;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2Fdocker-compose.yml;0;4
 FILE_NAME_4=0;YAML;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2Fdocker-compose.production.yml;0;4
 
 [VTE]
-last_dir=/home/elk/Study/Я.Практикум/Спринт_15/taski-docker/.github/workflows
+last_dir=/home/elk/Study/Я.Практикум/Спринт_15/taski-docker/backend/backend
 
 [prjorg]
 source_patterns=*.py;
