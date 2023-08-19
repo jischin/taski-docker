@@ -131,3 +131,4 @@ dmypy.json
 frontend/node_modules
 *.geany
 *.orig
+project_python.geany

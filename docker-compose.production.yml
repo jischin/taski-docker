@@ -1,35 +1,35 @@
 version: '3'
 
 volumes:
-  pg_data_production:
-  static_volume:
+  pg_data:
+  static:
 
-# Всё отличие — заменяем build на image и указываем, какой образ использовать
 services:
   db:
-    #container_name: db
+    # container_name: db
     image: postgres:13.10
     env_file: .env
     volumes:
-      - pg_data_production:/var/lib/postgresql/data
+      - pg_data:/var/lib/postgresql/data
   backend:
-    #container_name: backend
+    # container_name: backend
     image: jischin/taski_backend
     env_file: .env
+    depends_on:
+      - db
     volumes:
-      - static_volume:/backend_static
+      - static:/backend_static
   frontend:
-    #container_name: frontend
+    # container_name: frontend
     image: jischin/taski_frontend  # Качаем с Docker Hub
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
-      - static_volume:/frontend_static
+      - static:/frontend_static
   gateway:
-    #container_name: gateway
+    # container_name: gateway
     image: jischin/taski_gateway  # Качаем с Docker Hub
-    env_file: .env
     volumes:
-      - static_volume:/staticfiles/
+      - static:/staticfiles/
     ports:
       - 8000:80
