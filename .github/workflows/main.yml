@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  tests:
+  backend_tests:
     # Разворачиваем окружение:
     runs-on: ubuntu-latest
     steps:
@@ -32,10 +32,10 @@ jobs:
       # что нужно проверить файлы только в папке backend/
       run: python -m flake8 backend/
 
-  build_and_push_to_docker_hub:
+  build_backend_and_push_to_docker_hub:
     name: Push Docker image to DockerHub
     runs-on: ubuntu-latest
-    needs: tests
+    needs: backend_tests
     steps:
       - name: Check out the repo
         # Получение исходного кода из репозитория
@@ -135,7 +135,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       # Дождёмся билда всех образов Taski
-      - build_and_push_to_docker_hub
+      - build_backend_and_push_to_docker_hub
       - build_frontend_and_push_to_docker_hub
       - build_gateway_and_push_to_docker_hub
     steps:

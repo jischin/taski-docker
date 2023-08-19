@@ -1,0 +1,78 @@
+[editor]
+line_wrapping=true
+line_break_column=72
+auto_continue_multiline=true
+
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=true
+strip_trailing_spaces=true
+replace_tabs=true
+
+[indentation]
+indent_width=4
+indent_type=0
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=taski
+base_path=.
+description=
+file_patterns=
+
+[long line marker]
+long_line_behaviour=2
+long_line_column=79
+
+[files]
+current_page=1
+FILE_NAME_0=78;None;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2F.env;0;4
+FILE_NAME_1=67;YAML;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2F.github%2Fworkflows%2Fmain.yml;0;4
+FILE_NAME_2=82;Python;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2Fbackend%2Fbackend%2Fsettings.py;0;4
+FILE_NAME_3=0;YAML;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2Fdocker-compose.yml;0;4
+FILE_NAME_4=0;YAML;0;EUTF-8;0;1;1;%2Fhome%2Felk%2FStudy%2FЯ.Практикум%2FСпринт_15%2Ftaski-docker%2Fdocker-compose.production.yml;0;4
+
+[VTE]
+last_dir=/home/elk/Study/Я.Практикум/Спринт_15/taski-docker/.github/workflows
+
+[prjorg]
+source_patterns=*.py;
+header_patterns=*.h;*.H;*.hpp;*.hxx;*.h++;*.hh;
+ignored_dirs_patterns=
+ignored_file_patterns=*.o;*.obj;*.a;*.lib;*.so;*.dll;*.lo;*.la;*.class;*.jar;*.pyc;*.mo;*.gmo;
+generate_tag_prefs=0
+show_empty_dirs=true
+external_dirs=
+
+[build-menu]
+PythonFT_00_LB=Black
+PythonFT_00_CM=source "%p/venv/bin/activate" &&  black -l 79 -S "%f" && deactivate
+PythonFT_00_WD=
+PythonFT_01_LB=Isort
+PythonFT_01_CM=source "%p/venv/bin/activate" &&  isort "%f" && deactivate
+PythonFT_01_WD=
+PythonFT_02_LB=Flake8
+PythonFT_02_CM=source "%p/venv/bin/activate" &&  flake8 "%f" && deactivate
+PythonFT_02_WD=
+filetypes=Python;
+NF_00_LB=
+NF_00_CM=
+NF_00_WD=
+EX_00_LB=Выполнить в виртуальном окружении
+EX_00_CM=clear; if [ ! $VIRTUAL_ENV ]; then source "%p/venv/bin/activate"; fi  &&  python "%f"
+EX_00_WD=.
+NF_01_LB=
+NF_01_CM=
+NF_01_WD=
+NF_02_LB=
+NF_02_CM=
+NF_02_WD=
+NF_03_LB=Djago test
+NF_03_CM=source "%p/venv/bin/activate" &&  python "%p/yatube/manage.py" test && deactivate
+NF_03_WD=.
+EX_01_LB=Вкл/Выкл виртуальное окружение
+EX_01_CM=if [ ! $VIRTUAL_ENV ]; then source "%p/venv/bin/activate"; else deactivate;fi 
+EX_01_WD=.
